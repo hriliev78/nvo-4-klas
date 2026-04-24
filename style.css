@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Marck+Script&family=Pacifico&display=swap');
+
+body {
+  font-family: 'Google Sans', sans-serif;
+  display: flex;
+  flex-direction: column; /* Подрежда елементите един под друг */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center; /* Центрира текста вътре в параграфите и линковете */
+  margin: 0;
+  
+  /* 2. Тъмен модерен фон или градиент */
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background-attachment: fixed; /* Фонът не се мести при скрол */
+  
+  /* Цвят на текста (светъл за тъмен фон) */
+  color: #ffffff;
+  
+  margin: 0;
+  padding: 40px;
+  line-height: 1.8;
+}
+
+h1 {
+  /* Огромно заглавие за "wow" ефект */
+  font-size: 4rem; 
+  font-weight: 700;
+  letter-spacing: -2px; /* По-сбитите букви изглеждат по-дизайнерски */
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Цветно заглавие */
+}
+
+p {
+  max-width: 800px; /* Ограничава ширината, за да е лесно за четене */
+  opacity: 0.9;
+}
+
+a {
+  /* 1. Основен цвят на линка (неон или ярък цвят) */
+  font-size: 1.6rem;
+  color: #00f2fe; 
+  text-decoration: none; /* Премахва стандартното подчертаване */
+  font-weight: 500;
+  transition: all 0.3s ease; /* Прави промяната на цвета плавна */
+   /* Фина чертичка отдолу */
+}
+
+a:hover {
+  /* 2. Ефект при посочване с мишката */
+  color: #ffffff;
+  
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Лек блясък */
+}
+
+a:visited {
+  /* 3. Цвят след като линкът вече е бил кликнат */
+  color: #4facfe;
+}
+
+img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: brightness(0.9); /* Малко по-тъмна в началото */
+}
+
+img:hover {
+  transform: scale(1.03) rotate(1deg); /* Леко завъртане и уголемяване */
+  filter: brightness(1.1); /* Светва при посочване */
+  cursor: pointer;
+}
+
